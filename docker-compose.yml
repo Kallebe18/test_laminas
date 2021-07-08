@@ -1,0 +1,10 @@
+version: "2"
+services:
+  apigility:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "10001:80"
+    volumes:
+     - .:/var/www
